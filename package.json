@@ -1,9 +1,9 @@
 {
-  "name": "typescriptproject",
+  "name": "mircle",
   "author": "Jack Tan",
   "license": "ISC",
   "version": "1.0.0",
-  "description": "Typescript project",
+  "description": "An app that connects people via NFC",
   "main": "index.tsx",
   "scripts": {
     "precommit": "npm-run-all --parallel testCI tslint stylelint",

@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "outDir": "./build/dist/",
+        "rootDir": "./src/",
         "strict": true,
         "sourceMap": true,
         "allowJs": false,
