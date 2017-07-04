@@ -1,0 +1,29 @@
+{
+  "extends": "stylelint-config-standard",
+  "ignoreFiles": "src/styles/color-palette.scss",
+  "plugins": [
+    "stylelint-selector-bem-pattern"
+  ],
+  "rules": {
+    "plugin/selector-bem-pattern": {
+      "preset": "bem",
+      "presetOptions": {
+        "namespace": "twt"
+      },
+      "componentName": "[A-Z]+",
+      "componentSelectors": {
+        "initial": "^\\.{componentName}(?:-[a-z]+)?$",
+        "combined": "^\\.combined-{componentName}-[a-z]+$"
+      },
+      "utilitySelectors": "^\\.util-[a-z]+$"
+    },
+    "max-line-length": 150,
+    "max-nesting-depth": 4,
+    "selector-max-compound-selectors": 4,
+    "function-url-quotes": "always",
+    "selector-attribute-quotes": "always",
+    "string-quotes": "double",
+    "comment-whitespace-inside": "always",
+    "comment-no-empty": true
+  }
+}

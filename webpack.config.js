@@ -42,7 +42,16 @@ module.exports = {
         // css-loader interprets @import and url() like requires;
         // style-loader inject CSS to the <style> tag in DOM.
         test: /\.css$/,
-        use: ["style-loader", "css-loader", "postcss-loader"]
+        use: [
+          "style-loader",
+          "css-loader",
+          {
+            loader: "postcss-loader",
+            options: {
+              plugins: [require("postcss-cssnext")()]
+            }
+          }
+        ]
       },
       {
         // Url loader handles files with an url.

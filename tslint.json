@@ -13,7 +13,7 @@
     "member-access": false,
     "jsx-no-multiline-js": false,
     "typedef": [false],
-    "no-import-side-effect": [true, { "ignore-module": "\\.scss$" }],
+    "no-import-side-effect": [true, { "ignore-module": "\\.css$" }],
     "no-default-export": false,
     "newline-before-return": false,
     "variable-name": [
