@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo:400,700");
+
+:root {
+  --parallax-font: "Arvo", serif;
+  --parallax-font-size: 3em;
+  --parallax-font-color: white;
+}

@@ -1,3 +1,9 @@
 module.exports = {
-  use: ["postcss-cssnext", "autoprefixer", "stylefmt", "stylelint"]
+  use: [
+    "postcss-import",
+    "postcss-cssnext",
+    "autoprefixer",
+    "stylefmt",
+    "stylelint"
+  ]
 };

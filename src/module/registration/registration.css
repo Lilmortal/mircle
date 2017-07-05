@@ -1,20 +1,42 @@
 .parallax {
-  height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  &-iphone {
-    background-image: url("images.jpg");
+  &-city {
+    background-image: url("images/city.jpg");
   }
 
-  &-samsung {
-    background-image: url("download.jpg");
+  &-phone {
+    background-image: url("images/phone.jpg");
+  }
+
+  &-picture {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("images/people.png");
+    background-position: center;
+  }
+
+  &-block {
+    display: grid;
+    grid-area: 16/13/span 3/span 8;
+    justify-content: flex-end;
   }
 }
 
-.block {
-  padding: 20px;
-  height: 500px;
+.grid {
+  display: grid;
+  grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+  font-size: 1.4em;
+  margin: 0;
+  background-color: lightsteelblue;
+  height: 100%;
+  padding: 50px;
+
+  &__picture {
+    display: grid;
+    grid-area: 13/4/1/1;
+  }
+
+  & .block {
+    display: grid;
+    grid-area: 2 / 5 / span 10 / span 7;
+  }
 }
