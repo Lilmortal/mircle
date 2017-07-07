@@ -46,3 +46,8 @@ header {
     }
   }
 }
+
+.hamburgerMenu {
+  display: grid;
+  justify-content: flex-end;
+}

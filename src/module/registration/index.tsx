@@ -6,7 +6,7 @@ import "./registration.css";
 const Registration = () =>
   <div className="registration">
     <Parallax backgroundImage="backgroundImage__city">
-      Introducing MIRCLE
+      <div className="parallax__text">Introducing MIRCLE</div>
     </Parallax>
     <div className="grid">
       <div className="grid__picture">
@@ -25,7 +25,9 @@ const Registration = () =>
       </p>
     </div>
     <Parallax backgroundImage="backgroundImage__phone">
-      Activate NFC to add your new friend fast
+      <div className="parallax__text">
+        Activate NFC to add your new friend fast
+      </div>
     </Parallax>
     <div className="grid">
       <p className="block">
@@ -41,7 +43,9 @@ const Registration = () =>
         <div className="parallax-picture grid-logo" />
       </div>
     </div>
-    <Parallax backgroundImage="backgroundImage__city">yay...</Parallax>
+    <Parallax backgroundImage="backgroundImage__city">
+      <div className="parallax__text">yay...</div>
+    </Parallax>
   </div>;
 
 export default Registration;
