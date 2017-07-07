@@ -4,13 +4,16 @@ import "./parallax.css";
 
 interface ParallaxProps {
   backgroundImage?: string;
-  children?: object;
+  children?: string;
 }
 
-const Parallax: React.SFC<ParallaxProps> = ({ backgroundImage, children }) => {
+const Parallax = ({ backgroundImage, children }: ParallaxProps) => {
   return (
-    <div className={"parallax " + backgroundImage}>
-      {children}
+    <div className="parallax">
+      <div className={`parallax__image ${backgroundImage}`} />
+      <div className="parallax__text">
+        {children}
+      </div>
     </div>
   );
 };

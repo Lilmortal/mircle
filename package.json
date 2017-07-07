@@ -20,7 +20,9 @@
       "\\.(jpg|jpeg|png|gif)$": "<rootDir>/config/fileStub.js",
       "\\.(css|scss)$": "<rootDir>/config/cssStub.js"
     },
-    "testPathIgnorePatterns": ["<rootDir>/(build|node_modules)/"]
+    "testPathIgnorePatterns": [
+      "<rootDir>/(build|node_modules)/"
+    ]
   },
   "repository": "git@github.com:Lilmortal/mircle.git",
   "devDependencies": {
@@ -58,10 +60,12 @@
     "@types/jest": "^20.0.2",
     "@types/react": "^15.0.34",
     "@types/react-dom": "^15.5.1",
+    "@types/react-responsive": "^1.1.7",
     "@types/webpack": "^3.0.1",
     "@types/webpack-env": "^1.13.0",
     "autoprefixer": "^6.7.7",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-responsive": "^1.3.0"
   }
 }

@@ -5,12 +5,12 @@ import "./registration.css";
 
 const Registration = () =>
   <div className="registration">
-    <Parallax backgroundImage="parallax-city">
-      <div className="parallax-block">Tired of adding new people?</div>
+    <Parallax backgroundImage="backgroundImage__city">
+      Introducing MIRCLE
     </Parallax>
     <div className="grid">
       <div className="grid__picture">
-        <div className="parallax-picture grid-logo" />
+        <div className="backgroundImage__picture grid-logo" />
       </div>
       <p className="block">
         Meeting a new person can be exciting (or frightening depending on your
@@ -24,8 +24,8 @@ const Registration = () =>
         50km?
       </p>
     </div>
-    <Parallax backgroundImage="parallax-phone">
-      <div className="parallax-block">Introducing MIRCLE</div>
+    <Parallax backgroundImage="backgroundImage__phone">
+      Activate NFC to add your new friend fast
     </Parallax>
     <div className="grid">
       <p className="block">
@@ -41,9 +41,7 @@ const Registration = () =>
         <div className="parallax-picture grid-logo" />
       </div>
     </div>
-    <Parallax backgroundImage="parallax-city">
-      <div className="parallax-block">yay...</div>
-    </Parallax>
+    <Parallax backgroundImage="backgroundImage__city">yay...</Parallax>
   </div>;
 
 export default Registration;

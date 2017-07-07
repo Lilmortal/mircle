@@ -3,4 +3,46 @@ header {
   background-color: black;
   color: white;
   padding: 20px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navigation {
+  &__mobile {
+    display: grid;
+  }
+
+  &__desktop {
+    display: grid;
+    grid-column: 2;
+    justify-content: flex-end;
+
+    & ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    & a {
+      display: block;
+      padding: 0 20px;
+      text-decoration: none;
+      white-space: nowrap;
+      color: white;
+
+      &:hover {
+        /* background-image: radial-gradient(
+          circle,
+          lightsteelblue 22%,
+          black 100%
+        ); */
+      }
+    }
+  }
 }
