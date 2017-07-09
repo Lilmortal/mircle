@@ -10,7 +10,7 @@ const Registration = () =>
     </Parallax>
     <div className="grid">
       <div className="grid__picture">
-        <div className="backgroundImage__picture grid-logo" />
+        <div className="backgroundImage__picture" />
       </div>
       <p className="block">
         Meeting a new person can be exciting (or frightening depending on your
@@ -40,7 +40,7 @@ const Registration = () =>
         very corporate bs.
       </p>
       <div className="grid__picture">
-        <div className="parallax-picture grid-logo" />
+        <div className="backgroundImage__picture" />
       </div>
     </div>
     <Parallax backgroundImage="backgroundImage__city">

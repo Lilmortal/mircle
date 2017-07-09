@@ -49,11 +49,11 @@ const Navigation = ({ className }: NavigationProps) =>
 const Header = () =>
   <header>
     <span className="title">Mircle</span>
-    <MediaQuery query="(max-width: 884px)">
+    <MediaQuery maxWidth={884} className="navigation">
       <HamburgerMenu>Menu</HamburgerMenu>
       <Navigation className="navigation__mobile" />
     </MediaQuery>
-    <MediaQuery query="(min-width:885px)">
+    <MediaQuery minWidth={885}>
       <Navigation className="navigation__desktop" />
     </MediaQuery>
   </header>;

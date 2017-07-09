@@ -17,7 +17,8 @@
 
 .grid {
   display: grid;
-  grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+  grid-template: repeat(12, 1fr) / repeat(21, 1fr);
+  grid-column-gap: 1em;
   font-size: 1.4em;
   margin: 0;
   background-color: lightsteelblue;
@@ -29,16 +30,29 @@
 
     @media (min-width: 960px) {
       display: grid;
-      grid-area: 13/4/1/1;
+
+      &:nth-child(1) {
+        grid-area: 1/1/-1/span 6;
+      }
+
+      &:nth-child(2) {
+        grid-area: 1/-6/-1/span 6;
+      }
     }
   }
 
   & .block {
     display: grid;
-    grid-area: 1/1/span 12/span 12;
+    grid-area: 1/1/-1/-1;
 
     @media (min-width: 960px) {
-      grid-area: 2/5/span 10/span 7;
+      &:nth-child(1) {
+        grid-area: 1/1/-1/-7;
+      }
+
+      &:nth-child(2) {
+        grid-area: 1/7/-1/-1;
+      }
     }
   }
 }

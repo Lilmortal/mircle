@@ -4,22 +4,34 @@ header {
   color: white;
   padding: 20px;
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
 }
 
 .title {
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-column: 1/1/-1/span 2;
 }
 
 .navigation {
+  display: grid;
+  grid-column: 2/-1;
+
   &__mobile {
-    display: grid;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 55vh;
+    width: 100%;
+    padding-top: 40px;
+    z-index: 1;
   }
 
   &__desktop {
     display: grid;
-    grid-column: 2;
+    grid-area: 1/2/-1/-1;
     justify-content: flex-end;
 
     & ul {
@@ -50,4 +62,5 @@ header {
 .hamburgerMenu {
   display: grid;
   justify-content: flex-end;
+  grid-column: 2/-1;
 }
