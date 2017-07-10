@@ -10,9 +10,11 @@
     z-index: 2;
     right: -150px;
     transition: right 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.4);
 
     &-active {
-      right: 20px;
+      right: 0;
+      padding-right: 25px;
       transition: right 0.3s ease-in-out;
     }
 

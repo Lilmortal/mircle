@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Arvo:400,700");
+@import url("https://fonts.googleapis.com/css?family=Arvo:400,700|Acme");
 
 :root {
   --parallax-font: "Arvo", serif;
   --parallax-font-size: 3em;
   --parallax-font-color: white;
+  --header-title-font: "Acme", sans-serif;
+  --header-title-font-size: 1.4em;
 }
