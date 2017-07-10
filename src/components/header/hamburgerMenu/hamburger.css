@@ -23,6 +23,7 @@
   height: 24px;
   display: inline-block;
   position: relative;
+  margin-right: 10px;
 }
 
 .hamburger-inner {
@@ -96,4 +97,11 @@
 .hamburger--vortex.is-active .hamburger-inner::after {
   bottom: 0;
   transform: rotate(90deg);
+}
+
+/* Our stuff */
+.hamburgerMenu {
+  display: grid;
+  justify-content: flex-end;
+  grid-column: 2/-1;
 }
