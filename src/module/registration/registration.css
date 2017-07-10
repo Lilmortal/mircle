@@ -16,8 +16,12 @@
 }
 
 .grid {
+  @media (min-width: 480px) {
+    grid-template: repeat(12, 1fr) / repeat(21, 1fr);
+  }
+
   display: grid;
-  grid-template: repeat(12, 1fr) / repeat(21, 1fr);
+  grid-template: initial;
   grid-column-gap: 1em;
   font-size: 1.4em;
   margin: 0;
