@@ -8,8 +8,8 @@
   "scripts": {
     "precommit": "npm-run-all --parallel testCI tslint stylelint",
     "start": "webpack-dev-server --content-base=src/ --progress --open",
-    "testCI": "jest",
-    "test": "jest --watch",
+    "testWatch": "jest --watch",
+    "test": "jest",
     "coverage": "jest --coverage",
     "stylelint": "stylelint **/src/**/*.css",
     "tslint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
@@ -20,9 +20,7 @@
       "\\.(jpg|jpeg|png|gif)$": "<rootDir>/config/fileStub.js",
       "\\.(css|scss)$": "<rootDir>/config/cssStub.js"
     },
-    "testPathIgnorePatterns": [
-      "<rootDir>/(build|node_modules)/"
-    ]
+    "testPathIgnorePatterns": ["<rootDir>/(build|node_modules)/"]
   },
   "repository": "git@github.com:Lilmortal/mircle.git",
   "devDependencies": {
