@@ -4,26 +4,30 @@ import "./hamburger.css";
 
 interface HamburgerMenuProps {
   children?: string;
-  isMenuActive: boolean
+  isMenuActive: boolean;
   toggleMenu(): void;
 }
 
-const HamburgerMenu = ({children, isMenuActive, toggleMenu}: HamburgerMenuProps) => {
-    const isActiveClassName = isMenuActive ? " is-active" : "";
+const HamburgerMenu = ({
+  children,
+  isMenuActive,
+  toggleMenu
+}: HamburgerMenuProps) => {
+  const isActiveClassName = isMenuActive && " is-active";
 
-    return (
-      <div className="hamburgerMenu">
-        <button
-          className={`hamburger hamburger--vortex ${isActiveClassName}`}
-          onClick={toggleMenu}
-        >
-          <span className="hamburger-box">
-            <span className="hamburger-inner" />
-          </span>
-          {children}
-        </button>
-      </div>
-    );
-}
+  return (
+    <div className="hamburgerMenu">
+      <button
+        className={`hamburger hamburger--vortex ${isActiveClassName}`}
+        onClick={toggleMenu}
+      >
+        <span className="hamburger-box">
+          <span className="hamburger-inner" />
+        </span>
+        {children}
+      </button>
+    </div>
+  );
+};
 
 export default HamburgerMenu;

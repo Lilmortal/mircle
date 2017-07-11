@@ -32,14 +32,14 @@ class Navigation extends React.Component<NavigationProps, NavigationStates> {
       ? " navigation__mobile-active"
       : "";
 
-    const hamburgerMenu = this.props.isMobile
-      ? <HamburgerMenu
-          isMenuActive={this.state.isMenuActive}
-          toggleMenu={this.toggleMenu}
-        >
-          Menu
-        </HamburgerMenu>
-      : "";
+    const hamburgerMenu =
+      this.props.isMobile &&
+      <HamburgerMenu
+        isMenuActive={this.state.isMenuActive}
+        toggleMenu={this.toggleMenu}
+      >
+        Menu
+      </HamburgerMenu>;
 
     return (
       <div>
