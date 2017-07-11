@@ -1,11 +1,15 @@
 import * as React from "react";
 
-import { Parallax } from "../../components";
+import { Button, Parallax } from "../../components";
 import "./registration.css";
 
 const Registration = () =>
   <div className="registration">
     <Parallax backgroundImage="backgroundImage__city">
+      <div className="registration__buttons">
+      <Button>Download on app store</Button>
+      <Button>Use Mircle on the browser</Button>
+      </div>
       <div className="parallax__text">Introducing MIRCLE</div>
     </Parallax>
     <div className="grid">

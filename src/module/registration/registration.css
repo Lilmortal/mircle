@@ -1,3 +1,17 @@
+.registration {
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-area: 8/6/span 2/span 11;
+    z-index: 1;
+
+    @media (min-width: 960px) {
+      grid-area: 13/6/span 3/span 10;
+    }
+  }
+}
+
 .backgroundImage {
   &__city {
     background-image: url("images/city.jpg");
