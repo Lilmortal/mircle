@@ -6,6 +6,7 @@
   "description": "An app that connects people via NFC",
   "main": "index.tsx",
   "scripts": {
+    "build": "webpack",
     "precommit": "npm-run-all --parallel test tslint stylelint",
     "start": "webpack-dev-server --content-base=src/ --progress --open",
     "testWatch": "jest --watch",

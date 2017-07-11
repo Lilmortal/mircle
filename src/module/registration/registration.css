@@ -30,7 +30,7 @@
     background-image: url("images/phone.jpg");
   }
 
-  &__picture {
+  &__people {
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url("images/people.png");

@@ -7,14 +7,14 @@ const Registration = () =>
   <div className="registration">
     <Parallax backgroundImage="backgroundImage__city">
       <div className="registration__buttons">
-      <Button>Download on app store</Button>
-      <Button>Use Mircle on the browser</Button>
+        <Button>Download on app store</Button>
+        <Button>Use Mircle on the browser</Button>
       </div>
       <div className="parallax__text">Introducing MIRCLE</div>
     </Parallax>
     <div className="grid">
       <div className="grid__picture">
-        <div className="backgroundImage__picture" />
+        <div className="backgroundImage__people" />
       </div>
       <p className="block">
         Meeting a new person can be exciting (or frightening depending on your
@@ -44,7 +44,7 @@ const Registration = () =>
         very corporate bs.
       </p>
       <div className="grid__picture">
-        <div className="backgroundImage__picture" />
+        <div className="backgroundImage__people" />
       </div>
     </div>
     <Parallax backgroundImage="backgroundImage__city">
