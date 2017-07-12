@@ -10,7 +10,9 @@ const Registration = () =>
         <Button>Download on app store</Button>
         <Button>Use Mircle on the browser</Button>
       </div>
-      <div className="parallax__text">Introducing MIRCLE</div>
+      <div className="parallax__text">
+        Introducing MIRCLE(Test if travis ci work)
+      </div>
     </Parallax>
     <div className="grid">
       <div className="grid__picture">
