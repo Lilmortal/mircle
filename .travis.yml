@@ -1,7 +1,9 @@
 language: node_js
 node_js:
   - node
+before_deploy: "yarn build"
 deploy:
   provider: firebase
   token:
-    secure: "Xlw8ygfxtSBLxnkesq5zEqHj6FDJSaqzIFF/XmSWafAIvAtvjBe/XowuDA8oKm7uvw4n2v4agrSqfWmW40PhJ6LeEELr0YlV7u2oMuYb4DwxYUzvHloPLwxCpFdMSPvTgyj5pc046UwYinX+pex1hW1EqHd4QW8hSel42MKBE6i3CwkHhZBVPn1YYbpxdrZXIRgnYMliLgapcwYg82qRI5de7TYbGjKbRhwG6FDQ4i+cVpJjezgZ1stoZJS03OaNHWHS14NXeB20n9l+ILDdEwd6S9jh1b7Vqhn2ev7jx1ULXPfTPCf5GBjmxv5uk2vlZrPp27Q5T96NSUWuyIEqeJSiVD5oiYFETLlYI8V/Wqi5v/RkfYKJXUmmef3T8l+pcgsCTYYrcACwP/TTAMP0p3ao4nQNT9md/+yxZaxw0pI2+A1guD+4FTOPO7tkIKjeBincexmAQgA53Ld+js5vyOn7cjmuQZ/ovJcdltqpFGg3+Ku1Itf9EzfxUWQMcEAK9sqtSzt8z43PwprcaiaRNTAJHkR915tqBzSDulb9ja7M2BJeYOoD0Asd+FB+t3MGgzx000lyde7Eis8yk9nIuLV4C9c0R5W/qEQV+4ZNo43jI6vkoZtApqpzG2Z5EcuQIAIjLhCl0SCAR0YOGG/ihIj8kuVPFlTop9AHSYqLFos="
+    secure: $FIREBASE_TOKEN
+  
