@@ -7,7 +7,7 @@
   "main": "index.tsx",
   "scripts": {
     "build": "webpack",
-    "precommit": "npm-run-all --parallel test tslint stylelint",
+    "precommit": "npm-run-all --parallel build test tslint stylelint",
     "start": "webpack-dev-server --content-base=src/ --progress --open",
     "testWatch": "jest --watch",
     "test": "jest",
